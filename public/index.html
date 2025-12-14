@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Weather App</h1>
+
+    <form id="searchForm" autocomplete="off">
+      <input id="cityInput" type="text" placeholder="Enter city (e.g. Nairobi)" required />
+      <button type="submit">Get Weather</button>
+    </form>
+
+    <div id="message" class="message"></div>
+
+    <section id="result" class="result hidden">
+      <h2 id="place"></h2>
+      <div class="weather-row">
+        <img id="icon" alt="weather icon" />
+        <div>
+          <p id="desc" class="desc"></p>
+          <p class="temp"><span id="temp"></span>°C <small id="feels">(feels like)</small></p>
+        </div>
+      </div>
+
+      <ul class="details">
+        <li>Humidity: <span id="humidity"></span>%</li>
+        <li>Wind: <span id="wind"></span> m/s</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

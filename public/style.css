@@ -1,0 +1,64 @@
+/* style.css - simple clean styling */
+:root{
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --accent:#1e90ff;
+  --text:#222;
+  --muted:#666;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background:linear-gradient(180deg,var(--bg),#e9f1ff);
+  color:var(--text);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+
+.container{
+  width:100%;
+  max-width:520px;
+  background:var(--card);
+  border-radius:12px;
+  padding:24px;
+  box-shadow:0 6px 24px rgba(20,30,60,0.08);
+}
+
+h1{margin:0 0 12px 0;font-size:1.6rem}
+form{
+  display:flex;
+  gap:8px;
+  margin-bottom:12px;
+}
+input[type="text"]{
+  flex:1;
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid #dce7ff;
+  outline:none;
+  font-size:1rem;
+}
+button{
+  background:var(--accent);
+  color:#fff;
+  padding:10px 14px;
+  border-radius:8px;
+  border:0;
+  cursor:pointer;
+  font-weight:600;
+}
+.message{color:var(--muted); margin-bottom:10px}
+.hidden{display:none}
+
+.result{margin-top:10px}
+.weather-row{display:flex; gap:14px; align-items:center}
+.weather-row img{width:72px; height:72px}
+.desc{text-transform:capitalize; color:var(--muted); margin:0 0 4px 0}
+.temp{font-size:1.4rem; margin:0}
+.details{list-style:none; padding:0; margin:12px 0 0 0; display:flex; gap:12px; color:var(--muted)}
+.details li{font-size:0.95rem}
